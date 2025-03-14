@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Profile</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="Title">Jack Henry</h1>
+    </header>
 
+    <div class="container">
+        <nav class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'Introduction')">Introduction</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'TritiumDropdown')">Tritium</button>
+            <div id="TritiumDropdown" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'Tritium Overview')">Overview</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Parameters and requirements')">Parameters and requirements</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Self sufficiency')">Self sufficiency</button>
+            </div>
+            <button class="tablinks" onclick="toggleDropdown(event, 'ModellingDropdown')">Modelling</button>
+            <div id="ModellingDropdown" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'Residence Time Model')">Residence Time Model</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Our Model')">Our Model</button>
+            </div>
+            <button class="tablinks" onclick="toggleDropdown(event, 'TechnologiesDropdown')">Technologies</button>
+            <div id="TechnologiesDropdown" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'System Overview')">System Overview</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 1')">Subsystem 1</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 2')">Subsystem 2</button>
+            </div>
+            <button class="tablinks" onclick="openTab(event, 'Conclusion')">Conclusion</button>
+        </nav>
+
+        <main>
+            <!-- Tab content sections -->
+            <div id="Introduction" class="tabcontent active sway-section">
+                <div class="animated-text">
+                    <h3>Welcome</h3>
+                    <p>Welcome to the Introduction. This is the starting point for understanding Tritium Fuel Cycle Technologies.</p>
+                </div>
+            </div>
+
+            <div id="Tritium" class="tabcontent sway-section">
+                <h3>Tritium</h3>
+                <p>Some text about Tritium</p>
+                <div id="TritiumSubtabs" class="subtabs">
+                    <!-- This content will be managed by JavaScript -->
+                </div>
+            </div>
+
+            <div id="Modelling" class="tabcontent sway-section">
+                <h3>Modelling</h3>
+                <p>Some text about Modelling</p>
+                <div id="ModellingSubtabs" class="subtabs">
+                    <!-- This content will be managed by JavaScript -->
+                </div>
+            </div>
+
+            <div id="Technologies" class="tabcontent sway-section">
+                <h3>Technologies</h3>
+                <p>Some text about Technologies</p>
+                <div id="TechnologiesSubtabs" class="subtabs">
+                    <!-- This content will be managed by JavaScript -->
+                </div>
+            </div>
+
+            <div id="Conclusion" class="tabcontent sway-section">
+                <h3>Conclusion</h3>
+                <p>Conclusion text</p>
+            </div>
+
+            <!-- Sub-tab content sections -->
+            <div id="Tritium Overview" class="subtabcontent sway-section">
+                <h3>Overview</h3>
+                <p>Content about Tritium Overview.</p>
+            </div>
+
+            <div id="Parameters and requirements" class="subtabcontent sway-section">
+                <h3>Parameters and requirements</h3>
+                <p>Content about Parameters and requirements.</p>
+            </div>
+
+            <div id="Self sufficiency" class="subtabcontent sway-section">
+                <h3>Self sufficiency</h3>
+                <p>Content about Self sufficiency.</p>
+            </div>
+
+            <div id="Residence Time Model" class="subtabcontent sway-section">
+                <h3>Residence Time Model</h3>
+                <p>Content about Residence Time Model.</p>
+            </div>
+
+            <div id="Our Model" class="subtabcontent sway-section">
+                <h3>Our Model</h3>
+                <p>Detailed information about Our Model.</p>
+                <button class="IIsubtablinks" id="openGuiButton">Open External GUI</button>
+                <div class="loading-spinner" id="loadingSpinner"></div>
+            </div>
+
+            <div id="System Overview" class="subtabcontent sway-section">
+                <h3>System Overview</h3>
+                <p>Content about System Overview.</p>
+            </div>
+
+            <div id="Subsystem 1" class="subtabcontent sway-section">
+                <h3>Subsystem 1</h3>
+                <p>Detailed information about Subsystem 1.</p>
+                <div class="IIsubtabs">
+                    <button class="IIsubtablinks" onclick="openIISubTab(event, 'S1 Overview')">Overview</button>
+                    <button class="IIsubtablinks" onclick="openIISubTab(event, 'S1 T1')">Technology 1</button>
+                </div>
+            </div>
+
+            <div id="Subsystem 2" class="subtabcontent sway-section">
+                <h3>Subsystem 2</h3>
+                <p>Detailed information about Subsystem 2.</p>
+                <div class="IIsubtabs">
+                    <button class="IIsubtablinks" onclick="openIISubTab(event, 'S2 Overview')">Overview</button>
+                    <button class="IIsubtablinks" onclick="openIISubTab(event, 'S2 T1')">Technology 1</button>
+                </div>
+            </div>
+
+            <div id="S1 Overview" class="IIsubtabcontent sway-section">
+                <h3>S1 Overview</h3>
+                <p>Detailed information about S1 Overview.</p>
+            </div>
+
+            <div id="S1 T1" class="IIsubtabcontent sway-section">
+                <h3>S1 T1</h3>
+                <p>Detailed information about S1 T1.</p>
+            </div>
+
+            <div id="S2 Overview" class="IIsubtabcontent sway-section">
+                <h3>S2 Overview</h3>
+                <p>Detailed information about S1 Overview.</p>
+            </div>
+
+            <div id="S2 T1" class="IIsubtabcontent sway-section">
+                <h3>S2 T1</h3>
+                <p>Detailed information about S2 T1.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
