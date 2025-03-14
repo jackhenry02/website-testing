@@ -22,6 +22,6 @@ https://jackhenry02.github.io/website-testing
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/jackhenry02/jackhenry02/output/snake.svg" alt="Snake animation" />
+<img src="https://jackhenry02.github.io/jackhenry02/snake.svg" alt="Snake animation" />
 
 ###
