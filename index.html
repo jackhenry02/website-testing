@@ -3,74 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Profile</title>
+    <title>Jack Henry - Personal Profile</title>
     <link href="styles.css" rel="stylesheet">
     <script src="java.js" defer></script>
 </head>
 <body>
     <header>
         <h1 class="Title">Jack Henry</h1>
+        <p>Engineering Student | Data & Tech Enthusiast | Snowboarder</p>
     </header>
 
     <div class="container">
         <nav class="tabs">
-            <button class="tablinks" onclick="openTab(event, 'Introduction')">Introduction</button>
-            <button class="tablinks" onclick="toggleDropdown(event, 'TritiumDropdown')">Tritium</button>
-            <div id="TritiumDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'Tritium Overview')">Overview</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Parameters and requirements')">Parameters and requirements</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Self sufficiency')">Self sufficiency</button>
+            <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Experience drop down')">Experience</button>
+            <div id="Experience drop down" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'Engineering')">Engineering</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Other')">Other</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Societies')">Societies</button>
             </div>
-            <button class="tablinks" onclick="toggleDropdown(event, 'ModellingDropdown')">Modelling</button>
-            <div id="ModellingDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'Residence Time Model')">Residence Time Model</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Our Model')">Our Model</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Projects drop down')">Projects</button>
+            <div id="Projects drop down" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'TBC')">TBC</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'TBC2')">TBC2</button>
             </div>
-            <button class="tablinks" onclick="toggleDropdown(event, 'TechnologiesDropdown')">Technologies</button>
-            <div id="TechnologiesDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'System Overview')">System Overview</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 1')">Subsystem 1</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 2')">Subsystem 2</button>
-            </div>
-            <button class="tablinks" onclick="openTab(event, 'Conclusion')">Conclusion</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Modules')">Modules</button>
         </nav>
 
         <main>
             <!-- Tab content sections -->
-            <div id="Introduction" class="tabcontent active sway-section">
+            <div id="Profile" class="tabcontent active sway-section">
                 <div class="animated-text">
                     <h3>Welcome</h3>
-                    <p>Welcome to the Introduction. This is the starting point for understanding Tritium Fuel Cycle Technologies.</p>
+                    <p>Profile text here</p>
                 </div>
             </div>
 
-            <div id="Tritium" class="tabcontent sway-section">
-                <h3>Tritium</h3>
-                <p>Some text about Tritium</p>
+            <div id="Engineering" class="tabcontent sway-section">
+                <h3>Engineering experience</h3>
+                <p>Write stuff here</p>
                 <div id="TritiumSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
             </div>
 
-            <div id="Modelling" class="tabcontent sway-section">
-                <h3>Modelling</h3>
-                <p>Some text about Modelling</p>
+            <div id="Other" class="tabcontent sway-section">
+                <h3>Other experience</h3>
+                <p>Varsity and merch</p>
                 <div id="ModellingSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
             </div>
 
-            <div id="Technologies" class="tabcontent sway-section">
-                <h3>Technologies</h3>
-                <p>Some text about Technologies</p>
+            <div id="Societies" class="tabcontent sway-section">
+                <h3>Societies</h3>
+                <p>Eco and casino etc</p>
                 <div id="TechnologiesSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
-            </div>
-
-            <div id="Conclusion" class="tabcontent sway-section">
-                <h3>Conclusion</h3>
-                <p>Conclusion text</p>
             </div>
 
             <!-- Sub-tab content sections -->
