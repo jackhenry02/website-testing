@@ -3,74 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Profile</title>
+    <title>Jack Henry - Personal Profile</title>
     <link href="styles.css" rel="stylesheet">
     <script src="java.js" defer></script>
 </head>
 <body>
     <header>
         <h1 class="Title">Jack Henry</h1>
+        <p>Engineering Student | Data & Tech Enthusiast | Snowboarder | update v5 </p>
     </header>
 
     <div class="container">
         <nav class="tabs">
-            <button class="tablinks" onclick="openTab(event, 'Introduction')">Introduction</button>
-            <button class="tablinks" onclick="toggleDropdown(event, 'TritiumDropdown')">Tritium</button>
-            <div id="TritiumDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'Tritium Overview')">Overview</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Parameters and requirements')">Parameters and requirements</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Self sufficiency')">Self sufficiency</button>
+            <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Experience drop down')">Experience</button>
+            <div id="Experience drop down" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'Engineering')">Engineering</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Other')">Other</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'Societies')">Societies</button>
             </div>
-            <button class="tablinks" onclick="toggleDropdown(event, 'ModellingDropdown')">Modelling</button>
-            <div id="ModellingDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'Residence Time Model')">Residence Time Model</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Our Model')">Our Model</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Projects drop down')">Projects</button>
+            <div id="Projects drop down" class="dropdown-content">
+                <button class="subtablinks" onclick="openSubTab(event, 'TBC')">TBC</button>
+                <button class="subtablinks" onclick="openSubTab(event, 'TBC2')">TBC2</button>
             </div>
-            <button class="tablinks" onclick="toggleDropdown(event, 'TechnologiesDropdown')">Technologies</button>
-            <div id="TechnologiesDropdown" class="dropdown-content">
-                <button class="subtablinks" onclick="openSubTab(event, 'System Overview')">System Overview</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 1')">Subsystem 1</button>
-                <button class="subtablinks" onclick="openSubTab(event, 'Subsystem 2')">Subsystem 2</button>
-            </div>
-            <button class="tablinks" onclick="openTab(event, 'Conclusion')">Conclusion</button>
+            <button class="tablinks" onclick="toggleDropdown(event, 'Modules')">Modules</button>
         </nav>
 
         <main>
             <!-- Tab content sections -->
-            <div id="Introduction" class="tabcontent active sway-section">
+            <div id="Profile" class="tabcontent sway-section">
                 <div class="animated-text">
                     <h3>Welcome</h3>
-                    <p>Welcome to the Introduction. This is the starting point for understanding Tritium Fuel Cycle Technologies.</p>
+                    <p>
+3rd year engineering student at Churchill College, University of Cambridge, currently specialised as a mechanical engineer, looking to specialise further in computer and information engineering.
+<br>
+Education: <br>
+University of Cambridge, Cambridge 	<br>
+2022-2026 <br>
+<li> 3rd year of studying Engineering BA and MEng at Churchill College </li>
+<li> 2:1 in first 2 years in general engineering modules </li>
+<li> Computer and information engineering specialisation for MEng </li>
+<li> Mechanical engineering specialisation for BA </li>
+
+Lord Wandsworth College, Hook
+2014-2021  
+-	A-Level: Further Maths (A*), Maths (A*), Physics (A*), AS-Level: Music Technology (A)
+-	GCSE: nine 9s, one 8, one 7, one A*
+-	Academic, music, and sports scholar
+
+Additional skills:
+Coding:			Python, Entry level in C++, html, and CSS
+Design:			Adobe Illustrator, CAD (SolidWorks)
+Language:		English (native), French (basic conversational)
+Other useful tools:		Microsoft, Irish Passport (as well as British), Full UK Driving License
+Other interests:			Snowboarding, music production, fitness
+
+                        
+                    </p>
                 </div>
             </div>
 
-            <div id="Tritium" class="tabcontent sway-section">
-                <h3>Tritium</h3>
-                <p>Some text about Tritium</p>
+            <div id="Engineering" class="tabcontent sway-section">
+                <h3>Engineering experience</h3>
+                <p>
+Tokamak Energy - Fusion Fuel Cycle Engineer Summer Placement
+July – Sept 2024 
+-	3-month summer internship at a nuclear fusion company, that uses HTS technologies for magnetic confinement 
+-	Performed literature research for tritium compatible technologies  
+-	Presented the top technologies to be used in a tritium fuel cycle, for both current technology capabilities as well as future
+-	Aided in developing a python model to simulate a tritium fuel cycle
+
+Ark Data Centres - Engineering Intern
+Nov 2021 – Feb 2022 
+-	4 month internship at a privately owned multi-billion pound data centre enterprise that builds and operates UK data centres
+-	Reporting to COO, worked in 4 departments: civil, technical operations, design, and real estate services with CBRE
+-	Testing and assessing onboarding programmes in order for the company to eventually develop a graduate scheme
+-	Prepared a research report on emerging data centre technologies which was presented to the head of design
+
+ 
+Air Products - Work Experience 
+June 2019 
+-	2 weeks work experience course at industrial gas company                    
+                </p>
                 <div id="TritiumSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
             </div>
 
-            <div id="Modelling" class="tabcontent sway-section">
-                <h3>Modelling</h3>
-                <p>Some text about Modelling</p>
+            <div id="Other" class="tabcontent sway-section">
+                <h3>Other experience</h3>
+                <p>
+Varsity Trip   
+Director and Co-President
+2025 
+-	Director of a private limited company that runs the largest student ski trip in the world
+-	Selecting and managing a team of ten to organise the trip for over 2700 students
+-	Overseeing a budget of over £2.3 million; executive decision making across all independent work streams; communication and contract negotiation with multiple ski resorts, businesses, and tour operators
+-	Responsible for personal tasks such as managing the finances, legal contracts, and website, whilst also overseeing roles such as merchandise, design, and marketing 
+Merchandise Director
+2024 
+-	Designing, supplying and distributing all merchandise for the trip across 60 Oxbridge colleges 
+-	Responsible for over £20k of revenue from merchandise
+
+Silverstick - Merchandise Consultant
+Jan 2025 - Present 
+-	Working on a freelance basis to aid with design mock-ups, and databases for sales prospectuses, as well as reaching out to possible future clients 
+
+
+
+                </p>
                 <div id="ModellingSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
             </div>
 
-            <div id="Technologies" class="tabcontent sway-section">
-                <h3>Technologies</h3>
-                <p>Some text about Technologies</p>
+            <div id="Societies" class="tabcontent sway-section">
+                <h3>Societies</h3>
+                <p>
+Cambridge University Eco Racing (CUER) - Operations, Sponsorship, and Finance Team
+Oct 2023 – July 2024 
+-	Working to build the UK's most efficient solar powered car; contacting and working with companies for sponsorships
+
+ 
+Churchill Casino - Personnel Officer
+Sept 2023 - July 2024 
+-	Organising casino events with the rest of the team; managing over 80 croupiers to create teams for the events
+-   Still working presently for churchill casino as a croupier
+
+ 
+Cambridge University Ski and Snowboard Club (CUSSC) - Snowboard Captain
+Sept 2023 - Present
+-	Work with freestyle captain to organise indoor freestyle sessions
+                </p>
                 <div id="TechnologiesSubtabs" class="subtabs">
                     <!-- This content will be managed by JavaScript -->
                 </div>
-            </div>
+            <div id="Modules" class="tabcontent sway-section">
+                <h3>Modules</h3>
+                <p>
+                    Year 1: General Engineering
+                    Mechanics, Thermofluids, Structures, Materials, Electrical, Maths
 
-            <div id="Conclusion" class="tabcontent sway-section">
-                <h3>Conclusion</h3>
-                <p>Conclusion text</p>
+                    Year 2: General Engineering
+                    Mechanics, Thermofluids, Structures, Materials, Electrical, Information, Maths, Business, Wind Power, Bio-engineering
+
+                    Year 3: Mechanical Engineering
+                    Mech: Dynamics, Vibrations, Machine Design
+                    Info: Signals and systems, Statistical signal processing, Inference, Mathematical methods
+                    Business: Modelling Risk, Organisational Behaviour
+
+                    Year 4: Computer and Information Engineering
+                    TBC
+                    Planning to do: Machine learning, Deep learning, Algorithms and data structures, Practical Optimisation
+                </p>
+                <div id="TechnologiesSubtabs" class="subtabs">
+                    <!-- This content will be managed by JavaScript -->
+                </div>
+
+                <div id="Projects" class="tabcontent sway-section">
+                <h3>Projects</h3>
+                <p>
+
+-	Data Science: Exploring techniques for fitting regression curves to data (python)
+-	Device Programming: Using serial communication, and an I2C sensor to programme a microprocessor as a temperature alarm system (C++ and bash)
+-	Integrated Design Project: 	Manufactured and programmed a robot to find and sort types of blocks. Made use of laser cutting for rapid prototyping, with proficient documentation (C++ and SolidWorks)
+-	Flood Warning System: 	Coded a real-time flood warning system that worked on live data from the internet (python)
+-	Simulated Toy Car: Designed and simulated a simple toy car moving down a downhill track (SolidWorks)
+-	Aircraft autopilot: Designed and coded an autopilot for a virtual aircraft control system (python)
+-	Technical Pitch: Researched an emerging energy technology to pitch and present to our group as to why we think it is the energy technology of the future. My team chose nuclear fusion for the emerging technology.
+-	Data Classification: Training and applying a logistic classification model to datasets (python)
+-	PCA – using principal component analysis to correlate gene expression to tumour diagnoses (python)
+
+Snowboard Manufacture Project
+Nov 2023 – Oct 2024 
+Academy for Churchill College Enterprise and Leadership (ACCEL)
+-	Manufactured a snowboard from scratch using funding received from the programme
+-	Leadership course to increase communication and other soft skills
+
+
+
+                </p>
+                <div id="TechnologiesSubtabs" class="subtabs">
+                    <!-- This content will be managed by JavaScript -->
+                </div>
+            
             </div>
 
             <!-- Sub-tab content sections -->
